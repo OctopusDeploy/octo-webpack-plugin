@@ -1,0 +1,24 @@
+{
+  "name": "@octopusdeploy/octo-webpack-plugin",
+  "version": "0.0.1",
+  "description": "A webpack wrapper for octopack library to push projects to Octopus Deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/OctopusDeploy/octo-webpack-plugin"
+  },
+  "author": "Octopus Deploy <support@octopus.com> (http://octopus.com/)",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@octopusdeploy/octopackjs": "~0.0.7"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "sinon": "^1.17.2",
+    "vinyl-map": "^1.0.1"
+  }
+}
