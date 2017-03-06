@@ -9,7 +9,7 @@ OctoWebpackPlugin.prototype.apply = function (compiler) {
     var options = this.options;
 
 
-    compiler.plugin('emit', function(compilation, callback) {
+    compiler.plugin('after-emit', function(compilation, callback) {
         var files = compilation.assets;
         
         var pkg = octo.pack(options.type, {id: options.id, version: options.version});
