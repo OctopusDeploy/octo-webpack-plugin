@@ -50,8 +50,8 @@ OctoWebpackPlugin.prototype.apply = function (compiler) {
         }    
         
         
-        for (var nameAndPath in compilation.assets) {
-            pkg.append(nameAndPath);
+        for (var name in compilation.assets) {            
+            pkg.append(name, compilation.assets[name].existsAt);
         }
 
         pkg.toFile("./", function (error, data) {
